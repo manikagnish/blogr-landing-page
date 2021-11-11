@@ -1,0 +1,33 @@
+:root {
+  --clr-red: hsl(356, 100%, 66%);
+  --clr-red-light: hsl(355, 100%, 74%);
+  --clr-blue-dark: hsl(208, 49%, 24%);
+
+  --clr-white: hsl(0, 0, 100%);
+  --clr-grayish-blue: hsl(240, 2%, 79%);
+  --clr-grayish-blue-dark: hsl(207, 13%, 34%);
+  --clr-black-blue: hsl(240, 10%, 16%);
+
+  --clr-grad-red-light: hsl(13, 100%, 72%);
+  --clr-grad-red: hsl(353, 100%, 62%);
+
+  --clr-grad-blue-one: hsl(237, 17%, 21%);
+  --clr-grad-blue-two: hsl(237, 23%, 32%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
