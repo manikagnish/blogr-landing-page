@@ -3,7 +3,7 @@ import Navbar from "./Navbar";
 
 function HeroSection() {
   return (
-    <div>
+    <div className="hero-section">
       <Navbar />
       <h1>hero heading</h1>
     </div>

@@ -1,0 +1,29 @@
+.btn {
+  padding: 0.7em 1em;
+  border-radius: 5em;
+  min-width: 12rem;
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: 600;
+  border: 1px solid #fff;
+  transition: all 0.2s ease;
+
+  &--solid {
+    background-color: var(--clr-white);
+    color: var(--clr-red);
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+      color: var(--clr-white);
+      border: 1px solid transparent;
+    }
+  }
+
+  &--outline {
+    background-color: transparent;
+    color: var(--clr-white);
+    &:hover {
+      background-color: var(--clr-white);
+      color: var(--clr-red);
+    }
+  }
+}

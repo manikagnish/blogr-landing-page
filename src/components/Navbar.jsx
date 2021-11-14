@@ -35,8 +35,10 @@ export default function Navbar() {
           </li>
           <li>
             <a href="/#">
-              <Button text="Sign Up" type="solid" />
+              <Button text="Sign Up" type="btn--solid" />
             </a>
+            <Button text="Start for Free" type="btn--solid" />
+            <Button text="Learn More" type="btn--outline" />
           </li>
         </ul>
       </nav>

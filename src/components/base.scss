@@ -3,7 +3,7 @@
   --clr-red-light: hsl(355, 100%, 74%);
   --clr-blue-dark: hsl(208, 49%, 24%);
 
-  --clr-white: hsl(0, 0, 100%);
+  --clr-white: hsl(0, 0%, 100%);
   --clr-grayish-blue: hsl(240, 2%, 79%);
   --clr-grayish-blue-dark: hsl(207, 13%, 34%);
   --clr-black-blue: hsl(240, 10%, 16%);
@@ -28,6 +28,10 @@ html {
 
 body {
   font-size: 1.6rem;
-  font-family: "Poppins", sans-serif;
+  font-family: "Overpass", sans-serif;
   font-weight: 300;
+}
+
+a {
+  display: inline-block;
 }
