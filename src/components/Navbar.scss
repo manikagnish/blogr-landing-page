@@ -16,6 +16,13 @@
     cursor: pointer;
   }
 
+  .menu-item {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   nav {
     background-color: var(--clr-white);
     border-radius: 5px;
@@ -64,6 +71,13 @@
   font-size: 1.6rem;
   border-radius: 5px;
 
+  li {
+    transition: all 0.3s ease;
+    &:hover {
+      background-color: rgba(214, 212, 212, 0.527);
+    }
+  }
+
   &__link {
     text-decoration: none;
     color: var(--clr-grayish-blue-dark);
@@ -79,4 +93,8 @@
   &__dropdown {
     width: 100%;
   }
+}
+
+.nav-btn {
+  margin-bottom: 0 !important;
 }

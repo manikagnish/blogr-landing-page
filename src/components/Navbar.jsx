@@ -5,6 +5,7 @@ import logo from "../images/logo.svg";
 import hamburger from "../images/icon-hamburger.svg";
 import close from "../images/icon-close.svg";
 import Button from "./Button";
+import NavItem from "./NavItem";
 
 export default function Navbar() {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -38,89 +39,41 @@ export default function Navbar() {
       {(toggleMenu || screenWidth > 500) && (
         <nav>
           <ul>
-            <li>
-              <div>
-                <span className="active">Product</span>
-                <img src={icon} alt="arrow dark" className="active" />
-              </div>
+            <NavItem
+              icon={icon}
+              name="Product"
+              listItem1="Product1"
+              listItem2="Product2"
+              listItem3="Product3"
+            />
 
-              <ul className="dropdown-list">
-                <li>
-                  <a href="/#" className="dropdown-list__link">
-                    Product1
-                  </a>
-                </li>
-                <li>
-                  <a href="/#" className="dropdown-list__link">
-                    Product2
-                  </a>
-                </li>
-                <li>
-                  <a href="/#" className="dropdown-list__link">
-                    Product3
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <div>
-                <span className="active">Company</span>
-                <img src={icon} alt="arrow dark" />
-              </div>
+            <NavItem
+              icon={icon}
+              name="Company"
+              listItem1="Company1"
+              listItem2="Company2"
+              listItem3="Company3"
+            />
 
-              <ul className="dropdown-list">
-                <li>
-                  <a href="/#" className="dropdown-list__link">
-                    Company1
-                  </a>
-                </li>
-                <li>
-                  <a href="/#" className="dropdown-list__link">
-                    Company2
-                  </a>
-                </li>
-                <li>
-                  <a href="/#" className="dropdown-list__link">
-                    Company3
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li className="list-divider">
-              <div>
-                <span className="active">Connect</span>
-                <img src={icon} alt="arrow dark" />
-              </div>
+            <NavItem
+              className="list-divider"
+              icon={icon}
+              name="Connect"
+              listItem1="Contact"
+              listItem2="Newsletter"
+              listItem3="LinkedIn"
+            />
 
-              <ul className="dropdown-list list-divider__dropdown">
-                <li>
-                  <a href="/#" className="dropdown-list__link">
-                    Contact
-                  </a>
-                </li>
-                <li>
-                  <a href="/#" className="dropdown-list__link">
-                    Newsletter
-                  </a>
-                </li>
-                <li>
-                  <a href="/#" className="dropdown-list__link">
-                    LinkedIn
-                  </a>
-                </li>
-              </ul>
-            </li>
             <li>
               <a href="/#" className="navbar__link">
                 Login
               </a>
             </li>
-            <li>
+
+            <li className="nav-btn">
               <a href="/#">
                 <Button text="Sign Up" type="btn--gradient" />
               </a>
-              {/* <Button text="Start for Free" type="btn--solid" />
-            <Button text="Learn More" type="btn--outline" /> */}
             </li>
           </ul>
         </nav>
