@@ -1,3 +1,78 @@
 .navbar {
   font-family: "Ubuntu", "sans-serif";
+  font-size: 2rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em 5vw;
+
+  &__link {
+    text-decoration: none;
+    color: var(--clr-black);
+  }
+
+  nav {
+    background-color: var(--clr-white);
+    border-radius: 5px;
+    padding: 2em 1em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 85vw;
+    text-align: center;
+
+    position: absolute;
+    top: 12rem;
+    left: 5vw;
+    right: 5vw;
+
+    ul {
+      list-style-type: none;
+
+      li {
+        margin-bottom: 1em;
+
+        img.active {
+          transform: rotate(180deg);
+        }
+
+        span {
+          color: var(--clr-black);
+          margin-right: 0.5em;
+
+          &.active {
+            color: var(--clr-grayish-blue-dark);
+          }
+
+          &.not-active {
+            color: var(--clr-black);
+          }
+        }
+      }
+    }
+  }
+}
+
+.dropdown-list {
+  margin: 1em auto 0 auto;
+  background-color: rgba(168, 168, 168, 0.158);
+  padding: 1em;
+  width: 90%;
+  font-size: 1.6rem;
+  border-radius: 5px;
+
+  &__link {
+    text-decoration: none;
+    color: var(--clr-grayish-blue-dark);
+  }
+}
+
+.list-divider {
+  border-bottom: 1px solid rgb(214, 212, 212);
+  width: 90%;
+  margin: 1em auto 1em auto;
+  padding-bottom: 1em;
+
+  &__dropdown {
+    width: 100%;
+  }
 }

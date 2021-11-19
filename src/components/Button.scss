@@ -26,4 +26,15 @@
       color: var(--clr-red);
     }
   }
+
+  &--gradient {
+    background-color: var(--clr-red);
+    background-image: linear-gradient(
+      to right,
+      var(--clr-grad-red-light),
+      var(--clr-grad-red)
+    );
+    color: var(--clr-white);
+    padding: 0.7em 2em;
+  }
 }
