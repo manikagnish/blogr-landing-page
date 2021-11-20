@@ -7,11 +7,11 @@ import hamburger from "../images/icon-hamburger.svg";
 import close from "../images/icon-close.svg";
 import Button from "./Button";
 import NavItem from "./NavItem";
+import DropdownListItem from "./DropdownListItem";
 
 export default function Navbar() {
   const [toggleMenu, setToggleMenu] = useState(false);
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
-  // const [button, setButton] = useState
 
   useEffect(() => {
     const changeWidth = () => {
@@ -40,28 +40,33 @@ export default function Navbar() {
               className="nav-list-item"
               icon={screenWidth > 700 ? iconLight : iconDark}
               name="Product"
-              listItem1="Product1"
-              listItem2="Product2"
-              listItem3="Product3"
-            />
+            >
+              <DropdownListItem listItem="Product1" />
+              <DropdownListItem listItem="Product2" />
+              <DropdownListItem listItem="Product3" />
+              <DropdownListItem listItem="Product4" />
+              <DropdownListItem listItem="Product5" />
+            </NavItem>
 
             <NavItem
               className="nav-list-item"
               icon={screenWidth > 700 ? iconLight : iconDark}
               name="Company"
-              listItem1="Company1"
-              listItem2="Company2"
-              listItem3="Company3"
-            />
+            >
+              <DropdownListItem listItem="Company1" />
+              <DropdownListItem listItem="Company2" />
+              <DropdownListItem listItem="Company3" />
+            </NavItem>
 
             <NavItem
               className="list-divider nav-list-item"
               icon={screenWidth > 700 ? iconLight : iconDark}
               name="Connect"
-              listItem1="Contact"
-              listItem2="Newsletter"
-              listItem3="LinkedIn"
-            />
+            >
+              <DropdownListItem listItem="Contact" />
+              <DropdownListItem listItem="Newsletter" />
+              <DropdownListItem listItem="LinkedIn" />
+            </NavItem>
 
             <li className="nav-list-item">
               <a href="/#" className="navbar__link">

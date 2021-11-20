@@ -1,13 +1,6 @@
 import { useState } from "react";
 
-export default function NavItem({
-  icon,
-  name,
-  listItem1,
-  listItem2,
-  listItem3,
-  className,
-}) {
+export default function NavItem({ icon, name, className, children }) {
   const [toggler, setToggler] = useState(false);
 
   return (
@@ -21,27 +14,7 @@ export default function NavItem({
         />
       </div>
 
-      {toggler && (
-        <ul className="dropdown-list">
-          {/* do something like {links} which render as many list items as per the props as passed */}
-
-          <li>
-            <a href="/#" className="dropdown-list__link">
-              {listItem1}
-            </a>
-          </li>
-          <li>
-            <a href="/#" className="dropdown-list__link">
-              {listItem2}
-            </a>
-          </li>
-          <li>
-            <a href="/#" className="dropdown-list__link">
-              {listItem3}
-            </a>
-          </li>
-        </ul>
-      )}
+      {toggler && <ul className="dropdown-list">{children}</ul>}
     </li>
   );
 }
