@@ -6,12 +6,24 @@
   min-height: 90vh;
   border-radius: 0 0 0 10rem;
   background-image: url(../../images/bg-pattern-intro.svg);
-  background-size: 300vw;
-  background-position: center;
+  background-size: 350vw;
+  background-position: 35% 40%;
+
+  @include tab-port {
+    background-size: 220vw;
+    background-position: 25%;
+    padding: 0 5vw;
+    min-height: 80vh;
+  }
 
   &__title {
     font-size: 3.5rem;
     margin-top: 3em;
+
+    @include tab-port {
+      font-size: 5rem;
+      margin-top: 2em;
+    }
   }
 
   &__mission-statement {
