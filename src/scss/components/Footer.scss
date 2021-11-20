@@ -1,3 +1,38 @@
 .footer {
   font-family: "Ubuntu", sans-serif;
+  background: var(--clr-black-blue);
+  border-radius: 0 10rem 0 0;
+  color: var(--clr-white);
+  text-align: center;
+  padding: 4em;
+
+  &__img {
+    margin-bottom: 3em;
+  }
+
+  &__container {
+    &:not(:last-child) {
+      margin-bottom: 2em;
+    }
+
+    h4 {
+      margin-bottom: 1em;
+    }
+
+    li {
+      list-style-type: none;
+      margin-bottom: 0.5em;
+    }
+
+    a {
+      color: var(--clr-grayish-blue);
+      text-decoration: none;
+      font-weight: normal;
+      transition: all 0.2s ease;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
 }
