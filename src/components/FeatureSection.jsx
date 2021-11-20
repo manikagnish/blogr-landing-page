@@ -6,15 +6,23 @@ function FeaturesSection({
   para2,
   illustration,
   altText,
+  direction,
 }) {
   return (
-    <section>
+    <section className="features">
       <h2>{mainHeading}</h2>
-      <h3>{heading1}</h3>
-      <p>{para1}</p>
-      <h3>{heading2}</h3>
-      <p>{para2}</p>
-      <img src={illustration} alt={altText} />
+
+      <div className={`features__container ${direction}`}>
+        <div className="features__text">
+          <h3>{heading1}</h3>
+          <p>{para1}</p>
+
+          <h3>{heading2}</h3>
+          <p>{para2}</p>
+        </div>
+
+        <img src={illustration} alt={altText} className={direction} />
+      </div>
     </section>
   );
 }

@@ -1,17 +1,35 @@
+import { useState, useEffect } from "react";
+
 import HeroSection from "./components/HeroSection";
 import Footer from "./components/Footer";
 import FeatureSection from "./components/FeatureSection";
 import JumbotronLikeThing from "./components/JumbotronLikeThing";
 
 import editorVector from "./images/illustration-editor-mobile.svg";
+import editorVectorDesktop from "./images/illustration-editor-desktop.svg";
 import laptopVector from "./images/illustration-laptop-mobile.svg";
+import laptopVectorDesktop from "./images/illustration-laptop-desktop.svg";
 
 function App() {
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const changeWidth = () => {
+      setScreenWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", changeWidth);
+
+    return () => {
+      window.removeEventListener("resize", changeWidth);
+    };
+  }, []);
+
   return (
     <div>
       <HeroSection />
       <FeatureSection
-        illustration={editorVector}
+        illustration={screenWidth > 1050 ? editorVectorDesktop : editorVector}
         altText="editor illustration"
         mainHeading="Designed for the future"
         heading1="Introducing an extensible editor"
@@ -22,10 +40,11 @@ function App() {
         change the looks of a blog."
         para2="Flexible content management enables users to easily move through posts. Increase the usability of your blog 
         by adding customized categories, sections, format, or flow. With this functionality, you’re in full control."
+        direction="right"
       />
       <JumbotronLikeThing />
       <FeatureSection
-        illustration={laptopVector}
+        illustration={screenWidth > 1050 ? laptopVectorDesktop : laptopVector}
         heading1="Free, open, simple"
         heading2="Powerful tooling"
         para1="Blogr is a free and open source application backed by a large community of helpful developers. It supports 
@@ -35,6 +54,7 @@ function App() {
         capable of producing even the most complicated sites.
       "
         altText="laptop illustration"
+        direction="left"
       />
       <Footer />
     </div>
