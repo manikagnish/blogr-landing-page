@@ -5,7 +5,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2em 5vw;
+  margin-top: 1em;
 
   .logo {
     a {
@@ -20,7 +20,7 @@
     font-family: "Ubuntu", sans-serif;
     font-weight: 500;
     font-size: 1.6rem;
-    padding: 0 5vw;
+    margin-top: 0;
 
     .logo {
       margin-right: 1em;
@@ -36,7 +36,7 @@
 
   &__link {
     text-decoration: none;
-    color: var(--clr-black);
+    color: var(--clr-black-blue);
     @include tab-port {
       color: var(--clr-white);
     }
@@ -121,56 +121,23 @@
     }
   }
 }
-
-.dropdown-list {
-  margin: 1em auto 0 auto;
-  background-color: rgba(168, 168, 168, 0.158);
-  padding: 1.5em;
+.list-divider {
+  border-bottom: 1px solid rgb(214, 212, 212);
   width: 90%;
-  font-size: 1.6rem;
-  border-radius: 5px;
-  list-style-type: none;
-
+  margin: 1em auto 1em auto;
+  padding-bottom: 1em;
   @include tab-port {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    background-color: var(--clr-white);
-
-    position: absolute;
-    top: 5;
-    left: -30%;
-    min-width: 15rem;
-    list-style-type: none;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border: none;
+    width: auto;
+    margin: 0;
+    margin-right: auto !important;
+    padding-bottom: 0;
   }
 
-  li {
-    transition: all 0.3s ease;
-    margin-bottom: 1em;
-    @include tab-port {
-      text-align: left;
-    }
-
-    &:hover {
-      background-color: rgba(214, 212, 212, 0.527);
-      @include tab-port {
-        background-color: transparent;
-      }
-    }
-  }
-
-  &__link {
-    text-decoration: none;
-    color: var(--clr-grayish-blue-dark);
-    @include tab-port {
-      &:hover {
-        color: var(--clr-black);
-      }
-    }
+  &__dropdown {
+    width: 100%;
   }
 }
-
 li:last-child {
   margin: 0 !important;
 }

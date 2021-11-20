@@ -1,3 +1,29 @@
 .hero-section {
   background-color: var(--clr-red);
+  color: var(--clr-white);
+  text-align: center;
+  padding: 2em 5vw;
+  min-height: 90vh;
+  border-radius: 0 0 0 10rem;
+  background-image: url(../../images/bg-pattern-intro.svg);
+  background-size: 300vw;
+  background-position: center;
+
+  &__title {
+    font-size: 3.5rem;
+    margin-top: 3em;
+  }
+
+  &__mission-statement {
+    font-size: 2rem;
+    margin-top: 1em;
+  }
+
+  &__btn-container {
+    margin-top: 2em;
+  }
+
+  &__btn {
+    margin-right: 1em;
+  }
 }
