@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 
-import icon from "../images/icon-arrow-dark.svg";
+import iconDark from "../images/icon-arrow-dark.svg";
+import iconLight from "../images/icon-arrow-light.svg";
 import logo from "../images/logo.svg";
 import hamburger from "../images/icon-hamburger.svg";
 import close from "../images/icon-close.svg";
@@ -10,6 +11,7 @@ import NavItem from "./NavItem";
 export default function Navbar() {
   const [toggleMenu, setToggleMenu] = useState(false);
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+  // const [button, setButton] = useState
 
   useEffect(() => {
     const changeWidth = () => {
@@ -26,21 +28,17 @@ export default function Navbar() {
   return (
     <div className="navbar">
       <div className="logo">
-        <img src={logo} alt="logo" />
+        <a href="/#">
+          <img src={logo} alt="logo" />
+        </a>
       </div>
 
-      <img
-        className="menu-icon"
-        src={toggleMenu ? close : hamburger}
-        alt="hamburger menu icon"
-        onClick={() => setToggleMenu(!toggleMenu)}
-      />
-
-      {(toggleMenu || screenWidth > 500) && (
+      {(toggleMenu || screenWidth > 700) && (
         <nav>
-          <ul>
+          <ul className="nav-list">
             <NavItem
-              icon={icon}
+              className="nav-list-item"
+              icon={screenWidth > 700 ? iconLight : iconDark}
               name="Product"
               listItem1="Product1"
               listItem2="Product2"
@@ -48,7 +46,8 @@ export default function Navbar() {
             />
 
             <NavItem
-              icon={icon}
+              className="nav-list-item"
+              icon={screenWidth > 700 ? iconLight : iconDark}
               name="Company"
               listItem1="Company1"
               listItem2="Company2"
@@ -56,28 +55,38 @@ export default function Navbar() {
             />
 
             <NavItem
-              className="list-divider"
-              icon={icon}
+              className="list-divider nav-list-item"
+              icon={screenWidth > 700 ? iconLight : iconDark}
               name="Connect"
               listItem1="Contact"
               listItem2="Newsletter"
               listItem3="LinkedIn"
             />
 
-            <li>
+            <li className="nav-list-item">
               <a href="/#" className="navbar__link">
                 Login
               </a>
             </li>
 
-            <li className="nav-btn">
+            <li className="nav-btn nav-list-item">
               <a href="/#">
-                <Button text="Sign Up" type="btn--gradient" />
+                <Button
+                  text="Sign Up"
+                  type={screenWidth > 700 ? "btn--solid" : "btn--gradient"}
+                />
               </a>
             </li>
           </ul>
         </nav>
       )}
+
+      <img
+        className="menu-icon"
+        src={toggleMenu ? close : hamburger}
+        alt="hamburger menu icon"
+        onClick={() => setToggleMenu(!toggleMenu)}
+      />
     </div>
   );
 }
