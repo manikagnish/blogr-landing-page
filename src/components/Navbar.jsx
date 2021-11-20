@@ -41,11 +41,11 @@ export default function Navbar() {
               icon={screenWidth > 700 ? iconLight : iconDark}
               name="Product"
             >
-              <DropdownListItem listItem="Product1" />
-              <DropdownListItem listItem="Product2" />
-              <DropdownListItem listItem="Product3" />
-              <DropdownListItem listItem="Product4" />
-              <DropdownListItem listItem="Product5" />
+              <DropdownListItem listItem="Overview" />
+              <DropdownListItem listItem="Pricing" />
+              <DropdownListItem listItem="Marketplace" />
+              <DropdownListItem listItem="Features" />
+              <DropdownListItem listItem="Integrations" />
             </NavItem>
 
             <NavItem
@@ -53,9 +53,10 @@ export default function Navbar() {
               icon={screenWidth > 700 ? iconLight : iconDark}
               name="Company"
             >
-              <DropdownListItem listItem="Company1" />
-              <DropdownListItem listItem="Company2" />
-              <DropdownListItem listItem="Company3" />
+              <DropdownListItem listItem="About" />
+              <DropdownListItem listItem="Team" />
+              <DropdownListItem listItem="Blog" />
+              <DropdownListItem listItem="Careers" />
             </NavItem>
 
             <NavItem
