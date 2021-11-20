@@ -1,0 +1,57 @@
+.jumbotron-like-thing {
+  margin-top: 8em;
+  background-image: url(../../images/bg-pattern-circles.svg);
+  background-size: contain;
+  background-position: top;
+  background-color: var(--clr-grad-blue-one);
+  background-repeat: no-repeat;
+  padding: 15em 7vw 8em 7vw;
+  border-radius: 0 10rem 0 10rem;
+  color: var(--clr-white);
+  text-align: center;
+  position: relative;
+
+  @include tab-land {
+    display: flex;
+  }
+
+  @include special-case {
+    margin-top: 1em;
+    padding: 5em 7vw 5em 7vw;
+    background-size: 70%;
+    background-position: left -45% bottom 15%;
+    text-align: left;
+    &__text {
+      width: 50%;
+      margin-left: auto;
+    }
+  }
+
+  img {
+    width: 90vw;
+    position: absolute;
+    top: -15rem;
+    left: 5%;
+
+    @include special-case {
+      display: none;
+    }
+
+    @include tab-land {
+      display: block;
+      width: 38rem;
+      top: -5rem;
+      left: 5%;
+    }
+  }
+
+  h3 {
+    font-size: 3rem;
+    margin-bottom: 1em;
+  }
+
+  p {
+    color: var(--clr-grayish-blue);
+    line-height: 1.5;
+  }
+}

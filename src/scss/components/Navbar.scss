@@ -101,6 +101,12 @@
 
         span {
           margin-right: 0.5em;
+          transition: border-bottom-color 0.2s ease-out;
+
+          &:hover {
+            // color: var(--clr-grayish-blue) !important;
+            border-bottom: 1px solid #fff;
+          }
 
           &.active {
             color: var(--clr-grayish-blue-dark);
