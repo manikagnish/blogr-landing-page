@@ -23,6 +23,8 @@ export default function NavItem({
 
       {toggler && (
         <ul className="dropdown-list">
+          {/* do something like {links} which render as many list items as per the props as passed */}
+
           <li>
             <a href="/#" className="dropdown-list__link">
               {listItem1}
