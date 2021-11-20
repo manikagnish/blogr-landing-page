@@ -1,0 +1,17 @@
+.list-divider {
+  border-bottom: 1px solid rgb(214, 212, 212);
+  width: 90%;
+  margin: 1em auto 1em auto;
+  padding-bottom: 1em;
+  @include tab-port {
+    border: none;
+    width: auto;
+    margin: 0;
+    margin-right: auto !important;
+    padding-bottom: 0;
+  }
+
+  &__dropdown {
+    width: 100%;
+  }
+}

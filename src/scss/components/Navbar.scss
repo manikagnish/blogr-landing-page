@@ -5,12 +5,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2em 5vw;
 
   @include tab-port {
     font-family: "Ubuntu", sans-serif;
     font-weight: 500;
     font-size: 1.6rem;
+    padding: 0 5vw;
 
     .logo {
       margin-right: 1em;
@@ -130,7 +130,7 @@
     position: absolute;
     top: 5;
     left: -30%;
-    width: 15rem;
+    min-width: 15rem;
     list-style-type: none;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   }
@@ -158,24 +158,6 @@
         color: var(--clr-black);
       }
     }
-  }
-}
-
-.list-divider {
-  border-bottom: 1px solid rgb(214, 212, 212);
-  width: 90%;
-  margin: 1em auto 1em auto;
-  padding-bottom: 1em;
-  @include tab-port {
-    border: none;
-    width: auto;
-    margin: 0;
-    margin-right: auto !important;
-    padding-bottom: 0;
-  }
-
-  &__dropdown {
-    width: 100%;
   }
 }
 
