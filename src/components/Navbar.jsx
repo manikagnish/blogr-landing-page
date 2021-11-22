@@ -28,7 +28,7 @@ export default function Navbar() {
   return (
     <div className="navbar">
       <div className="logo">
-        <a href="/#">
+        <a href="/blogr-landing-page">
           <img src={logo} alt="logo" />
         </a>
       </div>
@@ -70,13 +70,13 @@ export default function Navbar() {
             </NavItem>
 
             <li className="nav-list-item">
-              <a href="/#" className="navbar__link">
+              <a href="/blogr-landing-page" className="navbar__link">
                 Login
               </a>
             </li>
 
             <li className="nav-btn nav-list-item">
-              <a href="/#">
+              <a href="/blogr-landing-page">
                 <Button
                   text="Sign Up"
                   type={screenWidth > 700 ? "btn--solid" : "btn--gradient"}
