@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/blogr-landing-page/static/css/main.d57be0fc.chunk.css",
-    "main.js": "/blogr-landing-page/static/js/main.041e5571.chunk.js",
-    "main.js.map": "/blogr-landing-page/static/js/main.041e5571.chunk.js.map",
+    "main.css": "/blogr-landing-page/static/css/main.9ee5d0a4.chunk.css",
+    "main.js": "/blogr-landing-page/static/js/main.e6d40629.chunk.js",
+    "main.js.map": "/blogr-landing-page/static/js/main.e6d40629.chunk.js.map",
     "runtime-main.js": "/blogr-landing-page/static/js/runtime-main.51787d48.js",
     "runtime-main.js.map": "/blogr-landing-page/static/js/runtime-main.51787d48.js.map",
     "static/js/2.54da6485.chunk.js": "/blogr-landing-page/static/js/2.54da6485.chunk.js",
     "static/js/2.54da6485.chunk.js.map": "/blogr-landing-page/static/js/2.54da6485.chunk.js.map",
     "index.html": "/blogr-landing-page/index.html",
-    "static/css/main.d57be0fc.chunk.css.map": "/blogr-landing-page/static/css/main.d57be0fc.chunk.css.map",
+    "static/css/main.9ee5d0a4.chunk.css.map": "/blogr-landing-page/static/css/main.9ee5d0a4.chunk.css.map",
     "static/js/2.54da6485.chunk.js.LICENSE.txt": "/blogr-landing-page/static/js/2.54da6485.chunk.js.LICENSE.txt",
     "static/media/index.scss": "/blogr-landing-page/static/media/bg-pattern-intro.bf6b3e1b.svg",
     "static/media/icon-arrow-dark.5215f8d9.svg": "/blogr-landing-page/static/media/icon-arrow-dark.5215f8d9.svg",
@@ -25,7 +25,7 @@
   "entrypoints": [
     "static/js/runtime-main.51787d48.js",
     "static/js/2.54da6485.chunk.js",
-    "static/css/main.d57be0fc.chunk.css",
-    "static/js/main.041e5571.chunk.js"
+    "static/css/main.9ee5d0a4.chunk.css",
+    "static/js/main.e6d40629.chunk.js"
   ]
 }
