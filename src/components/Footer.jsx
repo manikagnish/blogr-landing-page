@@ -8,19 +8,19 @@ function Footer() {
         <h4>Product</h4>
         <ul>
           <li>
-            <a href="/#">Overview</a>
+            <a href="/blogr-landing-page">Overview</a>
           </li>
           <li>
-            <a href="/#">Pricing</a>
+            <a href="/blogr-landing-page">Pricing</a>
           </li>
           <li>
-            <a href="/#">Marketplace</a>
+            <a href="/blogr-landing-page">Marketplace</a>
           </li>
           <li>
-            <a href="/#">Features</a>
+            <a href="/blogr-landing-page">Features</a>
           </li>
           <li>
-            <a href="/#">Integrations</a>
+            <a href="/blogr-landing-page">Integrations</a>
           </li>
         </ul>
       </div>
@@ -28,16 +28,16 @@ function Footer() {
         <h4>Company</h4>
         <ul>
           <li>
-            <a href="/#">About</a>
+            <a href="/blogr-landing-page">About</a>
           </li>
           <li>
-            <a href="/#">Team</a>
+            <a href="/blogr-landing-page">Team</a>
           </li>
           <li>
-            <a href="/#">Blog</a>
+            <a href="/blogr-landing-page">Blog</a>
           </li>
           <li>
-            <a href="/#">Careers</a>
+            <a href="/blogr-landing-page">Careers</a>
           </li>
         </ul>
       </div>
@@ -45,13 +45,13 @@ function Footer() {
         <h4>Connect</h4>
         <ul>
           <li>
-            <a href="/#">Contact</a>
+            <a href="/blogr-landing-page">Contact</a>
           </li>
           <li>
-            <a href="/#">Newsletter</a>
+            <a href="/blogr-landing-page">Newsletter</a>
           </li>
           <li>
-            <a href="/#">LinkedIn</a>
+            <a href="/blogr-landing-page">LinkedIn</a>
           </li>
         </ul>
       </div>
