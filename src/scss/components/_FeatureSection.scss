@@ -1,12 +1,14 @@
 .features {
   text-align: center;
-  padding: 4em 5vw;
+  padding: 4em 10vw;
+
   @include tab-port {
     margin-bottom: 4em;
   }
 
   @include mini-desktop {
     position: relative;
+    padding: 4em 5vw;
   }
 
   h2,
@@ -37,9 +39,10 @@
   p {
     color: var(--clr-grayish-blue-dark);
     line-height: 1.5;
+    text-align: justify;
   }
   img {
-    width: 90vw;
+    width: 80vw;
     display: block;
     margin: 0 auto;
 
@@ -56,16 +59,25 @@
     margin-bottom: 3em;
 
     .features__text {
-      width: 50%;
+      width: 40%;
     }
 
     img {
       @include mini-desktop {
-        width: 80rem;
+        width: 77rem;
         position: absolute;
         top: 0;
         right: -15%;
       }
+      @include desktop {
+        width: 80rem;
+      }
+    }
+  }
+
+  @include desktop {
+    .features__text {
+      width: 50%;
     }
   }
 }
@@ -79,16 +91,27 @@
     margin-top: 8em;
 
     .features__text {
-      // margin-top: 1em;
-      width: 50%;
+      width: 40%;
+      position: relative;
+      background-color: white;
     }
     img {
       @include mini-desktop {
-        width: 90rem;
+        width: 85rem;
         position: absolute;
         top: 0;
         left: -17%;
+        z-index: -1;
       }
+      @include desktop {
+        width: 90rem;
+      }
+    }
+  }
+
+  @include desktop {
+    .features__text {
+      width: 50%;
     }
   }
 }

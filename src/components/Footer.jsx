@@ -3,7 +3,9 @@ import logo from "../images/logo.svg";
 function Footer() {
   return (
     <footer className="footer">
-      <img src={logo} alt="blogr" className="footer__img" />
+      <a href="/blogr-landing-page">
+        <img src={logo} alt="blogr" className="footer__img" />
+      </a>
       <div className="footer__container">
         <h4>Product</h4>
         <ul>
